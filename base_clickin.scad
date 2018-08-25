@@ -38,6 +38,6 @@ module tower_base(){
     }
 }
 
-tower_base();
-translate([0,-front_offset,0])
-%servo();
+//tower_base();
+//translate([0,-front_offset,0])
+//  %servo();
