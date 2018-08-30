@@ -7,4 +7,7 @@ module ball_bearing(){
     cylinder(ball_bearing_length/2,ball_bearing_height ,true);
 }
 
-//%ball_bearing();
+//ball_bearing();
+
+
+sphere(3.5, $fn=25);

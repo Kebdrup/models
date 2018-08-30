@@ -34,3 +34,5 @@ module shaft(){
 translate([0,0,pole_up_trans])
 shaft();
 */
+
+//shaft();

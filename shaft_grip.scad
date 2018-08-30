@@ -39,18 +39,20 @@ module star_shape(factor = 1.8){
 }
 
 
-union(){
-    difference(){
-    cylinder(shaft_grip_height, 12, 12, true);
-        //hole
-    cylinder(shaft_grip_height, 8, 8, true);
-        //hole
-    }
-    difference(){
+module shaft_grip(){
+    union(){
+        difference(){
         cylinder(shaft_grip_height, 12, 12, true);
-        //hole
-        linear_extrude(height=shaft_grip_height, center=true){
-            star_shape(8);
+            //hole
+        cylinder(shaft_grip_height, 8, 8, true);
+            //hole
+        }
+        difference(){
+            cylinder(shaft_grip_height, 12, 12, true);
+            //hole
+            linear_extrude(height=shaft_grip_height, center=true){
+                star_shape(5);
+            }
         }
     }
 }

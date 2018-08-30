@@ -39,10 +39,11 @@ wall_height = 5;
 pit_width = 10;
 
 //bearing_disc
-disc_radius = shaft_hole_radius+pit_width;
-disc_height = 2;
+//disc_radius = shaft_hole_radius+pit_width;
+disc_radius = 10;
+disc_height = 4;
 hole_length = (shaft_hole_radius*2)-2;
-hole_width = 4;
+hole_width = 2;
 shaft_raidus = (hole_length/2)*0.6;
 
 //servo
@@ -53,7 +54,7 @@ ex_length = 5;
 ex_height = 4;
 shaft_radius = 5;
 shaft_height = 5;
-shaft_offset = -servo_length/2+shaft_radius;
+shaft_offset = -servo_length/2+shaft_radius+3;
 
 //ball bearings
 ball_bearing_length = 8;
@@ -65,9 +66,14 @@ shaft_pole_height = 60;
 shaft_grip_height = 5;
 shaft_fitting = 4;
 pole_up_trans = back_component_height/2-(servo_height/2+shaft_height/2)+((servo_height+shaft_height)-shaft_pole_height/2)+shaft_fitting;
-lock_ex_width = hole_width*0.8;
-lock_ex_length = hole_length-0.5;
+//lock_ex_width = hole_width*0.8;
+lock_ex_width = 2;
+//lock_ex_length = hole_length-0.5;
+lock_ex_length = 2;
 lock_ex_displacement = -17.6;
+
+//shaft_grip
+shaft_grip_radius = 12;
 
 
 
