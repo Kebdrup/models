@@ -48,4 +48,3 @@ module pan_fixture(){
     }
 }
 
-pan_fixture();
