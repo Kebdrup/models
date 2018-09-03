@@ -14,6 +14,9 @@ module pan_fixture(){
         translate([0,-outer_length/2+2,-2])
         cube([inner_width,4,4], true);
     }
+    
+    translate([outer_width/2+5/2,outer_length/2-10,tier3_height/2])
+    cube([5, 20, tier3_height+base_height], true);
 
     union(){
         translate([0,outer_length/2-tier3_length/2,tier3_height/2-base_height/2])
@@ -44,3 +47,5 @@ module pan_fixture(){
         }
     }
 }
+
+pan_fixture();
